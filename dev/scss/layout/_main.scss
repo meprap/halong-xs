@@ -1,0 +1,8 @@
+.#{$global} {
+    &-main {
+        min-height: 100%;
+        &__content {
+            @extend %content-gutter;
+        }
+    }
+}

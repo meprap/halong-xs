@@ -1,0 +1,59 @@
+.btn {
+    margin: 5px 0;
+    padding: 10px 20px;
+    @include transition;
+    @include border-radius(4px);
+    i {
+        vertical-align: middle;
+    }
+    &--xl {
+        padding: 15px 40px;
+    }
+    &--lg {
+        padding: 10px 35px;
+    }
+    &--md {
+        padding: 7px 30px;
+    }
+    &--sm {
+        padding: 6px 25px;
+    }
+    &--xs {
+        padding: 6px 20px;
+    }
+    &-light {
+        border: 1px solid;
+    }
+    &-semi-light {
+        border: 1px solid;
+    }
+    &-dark {
+        border: 1px solid;
+    }
+    &-default {
+        border: 1px solid;
+    }
+    &-primary {
+        border: 1px solid;
+    }
+    &-success {
+        border: 1px solid;
+    }
+    &-info {
+        border: 1px solid;
+    }
+    &-warning {
+        border: 1px solid;
+    }
+    &-danger {
+        border: 1px solid;
+    }
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

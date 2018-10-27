@@ -1,0 +1,37 @@
+h1 {
+    @extend %heading;
+}
+
+h2 {
+    @extend %heading;
+}
+
+h3 {
+    @extend %heading;
+}
+
+h4 {
+    @extend %heading;
+}
+
+h5 {
+    @extend %heading;
+}
+
+h6 {
+    @extend %heading;
+}
+
+a {
+    @include transition(all, .5s, ease);
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    margin: 0 0 15px;
+    @include last-child() {
+        margin-bottom: 0;
+    }
+}

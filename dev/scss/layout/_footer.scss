@@ -1,0 +1,8 @@
+.#{$global} {
+    &-footer {
+        &__info {
+            @extend %content-gutter;
+        }
+        &__copyright {}
+    }
+}

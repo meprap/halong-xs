@@ -1,0 +1,12 @@
+.alert {
+    position: relative;
+    padding: 15px 45px 15px 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    .close {
+        float: none;
+        @include position(absolute, $top: 15px, $right: 15px);
+        @include opacity(1);
+    }
+}

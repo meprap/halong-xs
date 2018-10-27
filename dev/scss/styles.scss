@@ -1,0 +1,44 @@
+@import 'vendors/animate/animate',
+        'vendors/bootstrap/bootstrap';
+        // 'vendors/pvt-icons/pvc-icons';
+        
+@import 'utilities/path',
+        'utilities/functions',
+        'utilities/global-vars',
+        'utilities/mixins',
+        'utilities/breakpoint',
+        'utilities/placeholders',
+        'utilities/gutter',
+        'utilities/helper';
+
+@import 'base/typo',
+        'base/config';
+
+@import 'modules/navbar',
+        'modules/pushy',
+        'modules/title',
+        'modules/blockquote',
+        'modules/button',
+        'modules/alert',
+        'modules/hr',
+        'modules/forms',
+        'modules/search',
+        'modules/nano',
+        'modules/dropdown',
+        'modules/loader',
+        'modules/table',
+        'modules/tabpanel',
+        'modules/modal',
+        'modules/list',
+        'modules/breadcrumbs',
+        'modules/pagination',
+        'modules/or',
+        'modules/media',
+        'modules/card',
+        'modules/carousel',
+        'modules/social',
+        'modules/panel';
+
+@import 'layout/header',
+        'layout/footer',
+        'layout/main';
