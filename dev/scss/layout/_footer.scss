@@ -1,8 +1,10 @@
 .#{$global} {
     &-footer {
-        &__info {
-            @extend %content-gutter;
+        &__copyright {
+            background-color: $color-brand;
+            padding: 10px 15px;
+            color: $color-white;
+            @include font-size(1.2);
         }
-        &__copyright {}
     }
 }

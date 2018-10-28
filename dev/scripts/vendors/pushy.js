@@ -58,7 +58,7 @@
         o = a(".btn-burger, .pushy-link"),
         p = a(".btn-burger"),
         q = a(g.data("focus")),
-        r = 200,
+        r = 100,
         s = g.width() + "px",
         t = ".pushy-submenu",
         u = "pushy-submenu-open",

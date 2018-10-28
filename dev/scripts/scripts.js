@@ -31,8 +31,6 @@ function footerAdjustment() {
 }
 
 
-
-
 // Auto Hide Navbar
 jQuery(document).ready(function ($) {
 	var mainHeader = $('.theme-header'),
@@ -125,66 +123,15 @@ jQuery(document).ready(function ($) {
 });
 
 
-// Owl Carousel
-$('.owl-carousel').owlCarousel({
-	//stagePadding: 150,
-	loop: true,
-	margin: 30,
-	autoHeight: true,
-	center: false,
-	nav: true,
-	dots: false,
-	responsiveClass: true,
-	responsiveRefreshRate: true,
-	responsive: {
-		0: {
-			items: 1
-		},
-		768: {
-			items: 2
-		},
-		960: {
-			items: 3
-		},
-		1200: {
-			items: 4
-		},
-		1920: {
-			items: 5
-		}
-	}
-})
-
-var setMinHeight = function (minheight) {
-	if (typeof minheight == 'undefined') {
-		minheight = 0;
-	}
-	jQuery('.owl-carousel').each(function (i, e) {
-		var oldminheight = minheight;
-
-		jQuery(e).find('.owl-item').each(function (i, e) {
-			minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;
-
-		});
-		jQuery(e).find('.owl-item').css("min-height", minheight + "px");
-		minheight = oldminheight;
-	});
-
-
-};
-
-setMinHeight();
-
-
 // Carousel
 var Layout = (function () {
 	// handle carousel
 	var handleCarousel = function () {
-		var $item = $(".theme-carousel .carousel-inner .item");
+		var $item = $(".theme-carousel .carousel-inner .item, .graphical-links a");
 		$item.eq(0).addClass("active");
 		$item.addClass("full-screen");
 
-		$(".theme-carousel img").each(function () {
+		$(".theme-carousel img, .graphical-links a img").each(function () {
 			var $src = $(this).attr("src");
 			var $color = $(this).attr("data-color");
 			$(this)
@@ -200,7 +147,7 @@ var Layout = (function () {
 	var handleCard = function () {
 		var $item = $(".card__img");
 		$item.addClass("full-screen");
-		$(".card__img img").each(function () {
+		$(".card__img img, .graphical-links a img").each(function () {
 			var $src = $(this).attr("src");
 			var $color = $(this).attr("data-color");
 
@@ -216,7 +163,7 @@ var Layout = (function () {
 
 	var carouselAdjustment = function () {
 		var height = $(window).height() - $(".theme-header").outerHeight(); //getting windows height
-		$('.theme-carousel').css('height', (height + 1) + 'px'); //and setting height of carousel
+		$('.theme-carousel__carousel-inner>.item').css('min-height', (height + 1) + 'px'); //and setting height of carousel
 	};
 
 	var attachResizeEvent = function () {

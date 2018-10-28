@@ -1,41 +1,37 @@
-.search {
-    width: 100%;
-    display: inline-block;
+.cruise-search {
+    background-color: $color-brand-secondary;
+    padding: 6px;
+    color: $color-40;
 
-    &>* {
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    &--header-top {
-        margin-top: 6px;
-    }
-
-    &__blog {
-        position: relative;
-
-        &:before {
-            content: '\f002';
-            font-family: 'FontAwesome';
-            position: absolute;
+    &__wrap {
+        >li {
+            position: relative;
+            margin-bottom: 6px;
         }
     }
 
-    input[type=search] {
-        border: none;
-        width: 120px;
-        padding-left: 20px;
-        cursor: pointer;
-        transition: all .5s ease;
+    &__search-icon {
+        position: absolute;
+        @include centerer(false, true);
+        left: 10px;
+    }
 
-        &:hover,
-        &:focus {
-            background-color: transparent;
-        }
+    .form-control {
+        @include font-size(1.2);
+        text-align: center;
+    }
 
-        &:focus {
-            width: 250px;
-            cursor: auto;
+    .row {
+        &--half {
+            margin-left: -3px;
+            margin-right: -3px;
+
+            .col-xs-6,
+            .col-xs-4 {
+                padding-left: 3px;
+                padding-right: 3px;
+            }
         }
     }
+
 }

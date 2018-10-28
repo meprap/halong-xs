@@ -1,0 +1,16 @@
+.cruise {
+    &-features {
+        background-color: $color-brand;
+        padding: 15px 30px;
+        &__list {
+            background-color: $color-white;
+            font-weight: 500;
+            margin-bottom: 6px;
+            padding: 10px 20px;
+            @include border-radius(5px);
+        }
+        &__icon {
+            width: 30px;
+        }
+    }
+}

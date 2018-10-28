@@ -22,16 +22,20 @@
 
         &__carousel-inner {
             width: 100%;
-            height: 100%;
+            // height: 100%;
 
             >.item {
                 width: 100%;
-                height: 100%;
+                // height: 100%;
                 z-index: 1;
+
+                &--min-height {
+                    min-height: 375px !important;
+                }
 
                 &:after {
                     content: '';
-                    background-color: black(.5);
+                    background-color: black(.1);
                     width: 100%;
                     height: 100%;
                     position: absolute;
@@ -43,19 +47,31 @@
         }
 
         &__carousel-caption {
-            max-width: 650px;
+            width: 100%;
             position: absolute;
-            left: auto;
+            top: 50%;
+            left: 50%;
             right: auto;
-            bottom: 100px;
+            bottom: auto;
+            transform: translate(-50%, -50%);
+            padding: 30px;
             z-index: 4;
-            padding: 0;
             text-align: left;
+            @include text-shadow(0 0 0);
             >h1 {
                 color: #fff;
             }
             &>p {
                 line-height: 1.8;
+            }
+            .theme__title {
+                @include font-size(1.8);
+                line-height: 1;
+                display: block;
+                small {
+                    font-size: 65%;
+                    color: white(.75);
+                }
             }
         }
 

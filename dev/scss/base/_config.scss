@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i&subset=cyrillic,devanagari,hebrew,latin-ext');
+
 html {
     overflow-x: hidden;
 }
@@ -5,4 +7,11 @@ html {
 html,
 body {
     height: 100%;
+}
+
+body {
+    background-color: #F9F9F9;
+    @include font($base-font, normal, 400);
+    @include font-size(1.4);
+    @include font-smoothing(on);
 }

@@ -10,12 +10,13 @@
         transition: transform .5s;
 
         &.is-hidden {
-            transform: translateY(-50%);
+            transform: translateY(-100%);
         }
 
         &__brand {
-            border-bottom: 1px solid;
-            padding: 12px 0;
+            background-color: $color-brand;
+            padding: 15px 0;
+            height: 62px;
             .social-icons {
                 margin-top: 10px;
             }

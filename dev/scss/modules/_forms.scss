@@ -1,5 +1,6 @@
 input,
-.btn {
+.btn,
+button {
     &:focus {
         outline: none;
     }
@@ -32,9 +33,10 @@ input,
 }
 
 .form-control {
-    min-height: 60px;
-    padding: 10px 15px;
-    @include border-radius(0);
+    border: none;
+    min-height: 35px;
+    padding: 5px 10px;
+    @include border-radius(4px);
     @include box-shadow(0 0 0);
     &:focus {
         @include box-shadow(0 0 0);

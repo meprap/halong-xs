@@ -1,5 +1,13 @@
 
+@import url('//fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i|Titillium+Web:300,300i,400,400i,600,600i,700,700i,900&subset=latin-ext,vietnamese');
 $global: 'theme';
+
+
+// Font Variables
+$base-font: 	    'Rubik', Helvetica, Arial, sans-serif;
+$header-font: 	    'Poppins', Helvetica, Arial, sans-serif;
+// $theme-icons: 	    'pv-common';
+
 
 // Color Variables
 $color-white : #fff;
@@ -15,3 +23,40 @@ $color-60: darken($color-white, 60%); // #666666
 $color-70: darken($color-white, 70%); // #4d4d4d
 $color-80: darken($color-white, 80%); // #333333
 $color-90: darken($color-white, 90%); // #1a1a1a
+
+
+// Brand Color
+$color-brand: #345e9b;
+$color-brand-secondary: #ffc107;
+
+// Bootstrap Color
+$color-primary : #3498DB !default;
+$color-success : $color-brand-secondary !default;
+$color-info : #67B2E5 !default;
+$color-warning : #F39C12 !default;
+$color-danger : #E74C3C !default;
+
+// Page Color Properties
+$color-base: $color-80;
+
+$color-header-brand: $color-80;
+$color-header-navbar: $color-90;
+$color-footer-info: $color-90;
+$color-footer-copyright: $color-80;
+$color-pushy: $color-90;
+
+$color-header-typo: $color-black;
+$color-semi-light: $color-50;
+$color-light: $color-10;
+$color-semi-dark: $color-70;
+$color-dark: $color-90;
+
+$color-link-default: $color-brand-secondary;
+$color-link-default-hover: $color-90;
+$color-link-brand: $color-brand;
+$color-link-brand-hover: $color-90;
+$color-link-light: $color-40;
+$color-link-light-hover: $color-90;
+$color-visited: $color-base;
+$color-active: $color-base;
+$color-border: $color-10;
