@@ -10,7 +10,7 @@ body {
 }
 
 body {
-    background-color: #F9F9F9;
+    background-color: $color-10;
     @include font($base-font, normal, 400);
     @include font-size(1.4);
     @include font-smoothing(on);

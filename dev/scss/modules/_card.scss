@@ -1,45 +1,64 @@
 .card {
-    border-bottom: 1px solid;
-    padding-bottom: 30px;
-    overflow: hidden;
-
-    &__desc {
-        @include last-child() {
-            margin-bottom: 10px;
-        }
-    }
-
-    &__tag {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    &__author-info {
-        @extend %list-none;
-
-        &>li {
-            display: inline-block;
-            margin-left: 10px;
-            margin-bottom: 0;
-            padding-left: 10px;
+    &-package {
+        background-color: $color-white;
+        @include border-radius(4px);
+        overflow: hidden;
+        a {
+            @include links($color-base,$color-base,$color-base,$color-base);
+            display: block;
+            height: 100%;
             position: relative;
-
-            &::before {
-                content: '|';
-                position: absolute;
-                top: 0;
-                left: 0;
+        }
+        &__img,
+        &__desc {
+            float: left;
+        }
+        &__img {
+            width: 35%;
+            img {
+                max-width: 100%;
             }
-
-            @include first-child() {
-                padding-left: 0;
-                margin-left: 0;
-
-                &::before {
-                    display: none;
-                }
+        }
+        &__desc {
+            width: 65%;
+            padding: 15px;
+            @include font-size(1.2);
+        }
+        &__title {
+            @include font-size(1.5);
+        }
+        &__total {
+            background-color: $color-success;
+            display: inline-block;
+            padding:  3px 5px 2px;
+            @include border-radius(4px);
+            color: $color-white;
+        }
+        &__offer {
+            width: 100%;
+            background-color: $color-10;
+            @include border-radius(4px);
+            font-size: 0;
+            display: table;
+            &-title,
+            &-price {
+                @include font-size(1.2);
+                display: table-cell;
+                vertical-align: middle;
             }
-
+            &-title {
+                width: 40%;
+                padding: 10px;
+            }
+            &-price {
+                background-color: $color-brand-secondary;
+                @include border-radius(0 4px 4px 0);
+                padding: 10px;
+            }
+            &-rate {
+                @include font-size(1.8);
+                font-weight: 500;
+            }
         }
     }
 }

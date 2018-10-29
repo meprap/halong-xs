@@ -10,9 +10,11 @@ $(document).ready(function () {
 	$(window).resize(function () {
 		headerAdjustment();
 		footerAdjustment();
+		cardHeaderAdjustment()
 	});
 	headerAdjustment();
 	footerAdjustment();
+	cardHeaderAdjustment()
 
 });
 
@@ -30,6 +32,12 @@ function footerAdjustment() {
 	$(".theme-main").css("margin-bottom", "-" + height + "px");
 }
 
+// Header Adjustment
+function cardHeaderAdjustment() {
+	var headerHeight = $(".card-package__desc").outerHeight(),
+		finalHeight = headerHeight;
+	$(".card-package__img").css("height", "" + finalHeight + "px");
+}
 
 // Auto Hide Navbar
 jQuery(document).ready(function ($) {
@@ -127,11 +135,11 @@ jQuery(document).ready(function ($) {
 var Layout = (function () {
 	// handle carousel
 	var handleCarousel = function () {
-		var $item = $(".theme-carousel .carousel-inner .item, .graphical-links a");
+		var $item = $(".theme-carousel .carousel-inner .item, .graphical-links a, .card-package__img");
 		$item.eq(0).addClass("active");
 		$item.addClass("full-screen");
 
-		$(".theme-carousel img, .graphical-links a img").each(function () {
+		$(".theme-carousel img, .graphical-links a img, .card-package__img img").each(function () {
 			var $src = $(this).attr("src");
 			var $color = $(this).attr("data-color");
 			$(this)
@@ -147,7 +155,7 @@ var Layout = (function () {
 	var handleCard = function () {
 		var $item = $(".card__img");
 		$item.addClass("full-screen");
-		$(".card__img img, .graphical-links a img").each(function () {
+		$(".card__img img, .graphical-links a img, .card-package__img img").each(function () {
 			var $src = $(this).attr("src");
 			var $color = $(this).attr("data-color");
 
