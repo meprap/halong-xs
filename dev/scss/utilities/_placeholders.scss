@@ -31,6 +31,7 @@
 
 // Header font
 %heading {
+    @include font($header-font, normal, 700);
     margin: 0 0 15px;
 }
 

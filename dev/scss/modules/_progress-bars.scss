@@ -1,0 +1,8 @@
+.progress {
+    height: 5px;
+    &-bar {
+        &-warning {
+            background-color: $color-brand-secondary;
+        }
+    }
+}
