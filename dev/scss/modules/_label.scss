@@ -1,0 +1,20 @@
+.label {
+    &--filter {
+        background-color: $color-white;
+        padding: 5px 8px;
+        @include box-shadow(0px 2px 10px black(.25));
+        @include border-radius(4px);
+        @include font-size(1.2);
+        font-weight: 400;
+        @include links($color-brand, $color-brand, $color-brand, $color-brand);
+        &:hover {
+            @include box-shadow(0px 2px 10px black(.5));
+        }
+        span {
+            color: $color-black;
+        }
+        i {
+            color: $color-brand-secondary;
+        }
+    }
+}
