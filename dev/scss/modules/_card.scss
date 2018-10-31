@@ -3,6 +3,8 @@
         background-color: $color-white;
         @include border-radius(4px);
         overflow: hidden;
+        @include border-radius(4px);
+        @include box-shadow(0px 2px 10px black(.25));
         a {
             @include links($color-base,$color-base,$color-base,$color-base);
             display: block;
