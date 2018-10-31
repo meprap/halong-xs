@@ -34,7 +34,8 @@ button {
 
 .form-control {
     border: none;
-    min-height: 35px;
+    min-height: 10px;
+    height: 30px;
     padding: 5px 10px;
     @include border-radius(4px);
     @include box-shadow(0 0 0);
@@ -49,6 +50,9 @@ button {
     }
     &--75 {
         width: 75%;
+    }
+    &--secondary {
+        background-color: $color-10;
     }
 }
 

@@ -17,4 +17,11 @@
             color: $color-brand-secondary;
         }
     }
+    &-due {
+        background-color: lighten($color-brand, 25%);
+        color: $color-black;
+        padding: 10px;
+        @include border-radius(4px);
+        line-height: 1.3;
+    }
 }
