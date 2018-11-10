@@ -76,9 +76,23 @@
         height: 35px;
     }
 
-    i {
-        @include centerer(true, true);
+    &__icon {
+        position: absolute;
+
+        &-left {
+            left: 10px;
+        }
+
+        &-right {
+            right: 10px;
+        }
+
+        &-align-middle {
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
+
 }
 
 .rounded {
@@ -139,12 +153,15 @@
     &-white {
         @include links($color-white, $color-white, $color-white, $color-white);
     }
+
     &-black {
         @include links($color-black, $color-black, $color-black, $color-black);
     }
+
     &-primary {
         @include links($color-brand, $color-brand, $color-brand, $color-brand);
     }
+
     &-brand-secondary {
         @include links($color-brand-secondary, $color-brand-secondary, $color-brand-secondary, $color-brand-secondary);
     }
@@ -156,45 +173,59 @@
     &-black {
         color: $color-black;
     }
+
     &-white {
         color: $color-white;
     }
+
     &-brand {
         color: $color-brand;
     }
+
     &-brand-secondary {
         color: $color-brand-secondary;
     }
+
     &-11 {
         @include font-size(1.1);
     }
+
     &-12 {
         @include font-size(1.2);
     }
+
     &-13 {
         @include font-size(1.3);
     }
+
     &-14 {
         @include font-size(1.4);
     }
+
     &-15 {
         @include font-size(1.5);
     }
+
     &-16 {
         @include font-size(1.6);
     }
+
     &-18 {
         @include font-size(1.8);
     }
+
     &-20 {
         @include font-size(2);
     }
+
     &-25 {
         @include font-size(2.5);
     }
+
     &-30 {
         @include font-size(3);
     }
+
     &-35 {
         @include font-size(3.5);
     }

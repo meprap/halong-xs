@@ -17,6 +17,11 @@
     &-header {
         background-color: $color-white;
         padding: 10px;
+        h4 {
+            @include font-size(1.4);
+            font-weight: 500;
+            color: $color-brand;
+        }
     }
     &-footer {
         background-color: $color-brand-secondary;
@@ -63,5 +68,13 @@
     }
     &-secondary {
         color: $color-brand-secondary;
+    }
+}
+
+.iconmoon {
+
+    &::before {
+        @include font-size(2.6);
+        color: $color-brand;
     }
 }

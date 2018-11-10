@@ -41,8 +41,21 @@
         padding: 15px 0;
 
         >li {
+            border-bottom: 1px solid $color-20;
+
             >a {
                 padding: 15px 25px;
+                @include font-size(1.7);
+                color: $color-80;
+            }
+        }
+
+        .dropdown-menu {
+            >li {
+                >a {
+                    @include font-size(1.6);
+                    color: $color-80;
+                }
             }
         }
     }

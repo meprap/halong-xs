@@ -42,6 +42,7 @@
             @include border-radius(4px);
             font-size: 0;
             display: table;
+            line-height: 1;
             &-title,
             &-price {
                 @include font-size(1.2);
@@ -49,7 +50,7 @@
                 vertical-align: middle;
             }
             &-title {
-                width: 40%;
+                width: 35%;
                 padding: 10px;
             }
             &-price {
@@ -60,6 +61,7 @@
             &-rate {
                 @include font-size(1.8);
                 font-weight: 500;
+                color: $color-brand;
             }
         }
     }
